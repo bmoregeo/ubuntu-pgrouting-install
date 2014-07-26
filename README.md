@@ -7,6 +7,8 @@ ubuntu-pgrouting-install
     maxx=-77.0413
     minx=38.9339
     
+    yourpassword=TEST
+    
     # Install extra
     sudo apt-get install python-pip
     sudo apt-get install git
@@ -33,5 +35,6 @@ ubuntu-pgrouting-install
                     -conf /usr/share/osm2pgrouting/mapconfig.xml \
                     -dbname routing \
                     -user gisi \
+                    -passwd $yourpassword
                     -clean
     
