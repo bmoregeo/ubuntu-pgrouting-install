@@ -21,10 +21,15 @@ ubuntu-pgrouting-install
     sudo apt-get install postgresql-9.3-postgis-2.1
     sudo apt-get install postgresql-9.3-pgrouting
 
+    # Edit /etc/postgresql/9.3/main/postgresql.conf
+    # Set TODO: cli -> #listen_addresses = 'localhost' -> listen_addresses = '*'
+    
 
     echo -e "host\tall\tall\t\t\t\t\t\ttrust" | sudo tee -a /etc/postgresql/9.3/main/pg_hba.conf
     echo -e "host\tall\tall\t0.0.0.0/0\t\ttrust" | sudo tee -a /etc/postgresql/9.3/main/pg_hba.conf
     sudo service posgresql restart
+
+    # TODO: Add your account to posgresql and create routing database
 
     # Setup osm
     mkdir $HOME/osmdata
