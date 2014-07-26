@@ -44,4 +44,6 @@ ubuntu-pgrouting-install
                     -user gisi \
                     -passwd $yourpassword
                     -clean
+                    
+    # SELECT pgr_analyzeGraph('ways',0.000001, 'the_geom', 'gid');
     
