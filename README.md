@@ -30,6 +30,8 @@ ubuntu-pgrouting-install
     sudo service posgresql restart
 
     # TODO: Add your account to posgresql and create routing database
+    
+    # TODO: Install extensions into the database.
 
     # Setup osm
     mkdir $HOME/osmdata
