@@ -21,6 +21,7 @@ ubuntu-pgrouting-install
 
 
     echo -e "host\tall\tall\t\t\t\t\t\ttrust" | sudo tee -a /etc/postgresql/9.3/main/pg_hba.conf
+    echo -e "host\tall\tall\t0.0.0.0/0\t\ttrust" | sudo tee -a /etc/postgresql/9.3/main/pg_hba.conf
     sudo service posgresql restart
 
     # Setup osm
