@@ -38,7 +38,7 @@ ubuntu-pgrouting-install
     cd $HOME/osmdata
     wget -O mapdata.osm "http://api.openstreetmap.org/api/0.6/map?bbox=$minx,$miny,$maxx,$maxy"
     
-    ./osm2pgrouting -file mapdata.osm \
+    osm2pgrouting -file mapdata.osm \
                     -conf /usr/share/osm2pgrouting/mapconfig.xml \
                     -dbname routing \
                     -user gisi \
