@@ -5,7 +5,7 @@ ubuntu-pgrouting-install
     minx=-77.0604
     miny=38.9247
     maxx=-77.0413
-    minx=38.9339
+    maxy=38.9339
     
     yourpassword=TEST
     
