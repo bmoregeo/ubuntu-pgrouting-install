@@ -47,3 +47,6 @@ ubuntu-pgrouting-install
                     
     # SELECT pgr_analyzeGraph('ways',0.000001, 'the_geom', 'gid');
     
+    
+    osm2pgsql -c mapdata.osm -d osmpgsql --cache-strategy sparse
+    
